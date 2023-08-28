@@ -3,6 +3,9 @@ package UI;
 import java.util.Scanner;
 
 public class UIMenu {
+    public static final String[] MESES = {"Enero", "Febrero", "Marzo" , "Abril", "Mayo", "Junio", "Julio", "Agosto",
+    "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+
     public static void mostrarMenu(){
         System.out.println("...:::Bienvenido:::...");
         System.out.println("Selecciona una opción");

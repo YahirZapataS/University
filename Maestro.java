@@ -6,8 +6,16 @@ public class Maestro {
     public String correo;
     public String especialidad;
 
+    // Método constructor
     Maestro(){
         System.out.println("Objeto declarado");
+        id++;
+    }
+
+    Maestro(String nombre, String correo){
+        System.out.println("Objeto declarado");
+        this.nombre = nombre;
+        this.correo = correo;
         id++;
     }
     public void mostrarNombre(){
