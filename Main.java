@@ -1,5 +1,3 @@
-import UI.UIMenu;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -7,6 +5,5 @@ public class Main {
         maestro.mostrarNombre();
         maestro.mostrarID();
         maestro.mostrarEspecialidad();
-        UIMenu.mostrarMenu();
     }
 }
