@@ -1,11 +1,12 @@
 import UI.UIMenu;
-import com.sun.security.jgss.GSSUtil;
-
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Maestro maestro = new Maestro("Yahir Zapata", "yahirzapatae@gmail.com");
+
+        Maestro maestro = new Maestro("Yahir Zapata", "yahirzapatae@gmail.com", "Informatica");
         maestro.mostrarNombre();
+        maestro.mostrarID();
+        maestro.mostrarEspecialidad();
+        UIMenu.mostrarMenu();
     }
 }

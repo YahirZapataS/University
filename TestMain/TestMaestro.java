@@ -1,15 +1,17 @@
-public class Maestro {
+package TestMain;
+public class TestMaestro {
     public static int id;
     public String nombre;
     public String correo;
     public String especialidad;
 
-    Maestro(){
+    // Método constructor
+    TestMaestro(){
         System.out.println("Objeto declarado");
         id++;
     }
 
-    Maestro(String nombre, String correo, String especialidad){
+    public TestMaestro(String nombre, String correo, String especialidad){
         System.out.println("Objeto declarado");
         this.nombre = nombre;
         this.correo = correo;

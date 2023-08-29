@@ -1,12 +1,12 @@
-package UI;
+package TestMain;
 
 import java.util.Scanner;
 
-public class UIMenu {
-    public static final String[] MESES = {"Enero", "Febrero", "Marzo" , "Abril", "Mayo", "Junio", "Julio", "Agosto",
-    "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+public class TestUIMenu {
+    public static final String[] MESES = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
+            "Septiembre", "Octubre", "Noviembre", "Diciembre"};
 
-    public static void mostrarMenu(){
+    public static void mostrarMenu() {
         System.out.println("...:::Bienvenido:::...");
         System.out.println("Selecciona una opción");
 
@@ -17,9 +17,9 @@ public class UIMenu {
         Scanner sc = new Scanner(System.in);
         int respuesta = 0;
 
-        do{
+        do {
             respuesta = sc.nextInt();
-            switch(respuesta){
+            switch (respuesta) {
                 case 1:
                     System.out.println("...:::Maestro:::...");
                     break;
@@ -34,23 +34,23 @@ public class UIMenu {
                 default:
                     System.out.println("Seleccione una opción correcta");
             }
-        }while(respuesta != 3);
+        } while (respuesta != 3);
     }
-    public static void menuEstudiante(){
+
+    public static void menuEstudiante() {
         System.out.println("1. Agendar Curso");
         System.out.println("2. Ver mis cursos");
         System.out.println("3. Cancelar");
 
         int respuesta = 0;
 
-        do{
+        do {
             Scanner sc = new Scanner(System.in);
             respuesta = sc.nextInt();
 
-            switch(respuesta){
+            switch (respuesta) {
                 case 1:
                     System.out.println("Agendar un curso");
-                    System.out.println(MESES);
                     break;
                 case 2:
                     System.out.println("Ver mis cursos");
@@ -60,6 +60,7 @@ public class UIMenu {
                 default:
                     System.out.println("Selecciona una opcion correcta");
             }
-        }while(respuesta != 0);
+        } while (respuesta != 0);
     }
 }
+
